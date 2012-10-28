@@ -51,7 +51,7 @@ $  sudo apt-get install curl git-core libtool
 $ bash -s stable < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)
 {% endcodeblock %}
 
-在 `~/.bashrc` 中设置RVM的环境变量 
+在 `~/.bashrc` 中设置RVM的环境变量, 如果是最新版的RVM, 就不需要做以下环境变量的设置了。
 
 {% codeblock %}
 if [[ -s "$HOME/.rvm/scripts/rvm" ]]  ; then source "$HOME/.rvm/scripts/rvm" ; fi
@@ -111,7 +111,7 @@ export LANG=en_US.UTF8
 之后退出终端再进入, 你的设置就生效了, 然后安装postgresql数据库, 以 ubuntu 11.10为例, 版本应该是 9.1
 
 {% codeblock %}
-$ sudo apt-get install postgresql
+$ sudo apt-get install postgresql libpq-dev
 {% endcodeblock %}
 
 切换到root用户下, 初始化postgresql用户和密码  
