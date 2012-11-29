@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Run Wordpress on Nginx Based on Linode"
+title: "Run Wordpress on Nginx"
 date: 2012-11-29 22:42
 meta: true
 comments: true
